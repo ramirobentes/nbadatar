@@ -1,4 +1,14 @@
 url: https://ramirobentes.github.io/nbadatar/
 template:
   bootstrap: 5
-
+reference:
+- title: Load data
+  desc: >
+    Download play-by-play, possession and lineup data. All three share the
+    same arguments.
+  contents:
+  - load_pbp
+- title: Helpers
+  contents:
+  - most_recent_season
+  - clear_cache
