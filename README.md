@@ -3,6 +3,11 @@
 
 # nbadatar
 
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/ramirobentes/nbadatar/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ramirobentes/nbadatar/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 nbadatar loads NBA play-by-play, possession and lineup data covering 30
 seasons (1996-97 through 2025-26), for both the regular season and the
 playoffs. The current season is updated daily.
