@@ -3,3 +3,4 @@
 export(load_lineup_stats)
 export(load_pbp)
 export(load_possessions)
+export(most_recent_season)

@@ -6,11 +6,20 @@
 \alias{load_lineup_stats}
 \title{Load NBA play-by-play data}
 \usage{
-load_pbp(seasons, season_type = c("regular", "playoffs"))
+load_pbp(
+  seasons = most_recent_season(),
+  season_type = c("regular", "playoffs")
+)
 
-load_possessions(seasons, season_type = c("regular", "playoffs"))
+load_possessions(
+  seasons = most_recent_season(),
+  season_type = c("regular", "playoffs")
+)
 
-load_lineup_stats(seasons, season_type = c("regular", "playoffs"))
+load_lineup_stats(
+  seasons = most_recent_season(),
+  season_type = c("regular", "playoffs")
+)
 }
 \arguments{
 \item{seasons}{Integer vector of seasons, labelled by the year the season

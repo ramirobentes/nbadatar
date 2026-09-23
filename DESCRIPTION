@@ -1,15 +1,19 @@
 Package: nbadatar
-Title: What the Package Does (One Line, Title Case)
+Title: Load NBA Play-by-Play, Possessions and Lineups Data
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Ramiro", "Bentes", , "ramirobentes@gmail.com", role = c("aut", "cre"))
+Description: Provides functions to download and load modified NBA play-by-play,
+    possession and lineup data covering 30 seasons, for both the regular
+    season and the playoffs. Data is hosted as 'Parquet' files on 'GitHub' and
+    updated daily during the season.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Imports: 
     arrow,
-    cli
+    cli,
+    vctrs
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
