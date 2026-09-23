@@ -13,6 +13,7 @@ Roxygen: list(markdown = TRUE)
 Imports: 
     arrow,
     cli,
+    memoise,
     vctrs
 Suggests: 
     testthat (>= 3.0.0)

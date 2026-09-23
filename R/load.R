@@ -42,20 +42,24 @@ load_table <- function(table, seasons, season_type) {
     ))
   }
 
-  dfs <- lapply(seasons, function(s) {
-    url <- sprintf(
-      "https://github.com/ramirobentes/nba_data/releases/download/%s/%s_%s_%d.parquet",
-      table, table, season_type, s
-    )
-    tryCatch(
-      arrow::read_parquet(url),
-      error = function(e) {
-        cli::cli_abort("Couldn't download {table} for {s} ({season_type}).", parent = e)
-      }
-    )
-  })
-
+  dfs <- lapply(seasons, function(s) read_one(table, s, season_type))
   do.call(vctrs::vec_rbind, dfs)
+
+}
+
+#' @importFrom arrow read_parquet
+#' @noRd
+read_one <- function(table, season, season_type) {
+  url <- sprintf(
+    "https://github.com/ramirobentes/nba_data/releases/download/%s/%s_%s_%d.parquet",
+    table, table, season_type, season
+  )
+  tryCatch(
+    arrow::read_parquet(url),
+    error = function(e) {
+      cli::cli_abort("Couldn't download {table} for {season} ({season_type}).", parent = e)
+    }
+  )
 }
 
 #' Most recent season with data available
@@ -66,3 +70,15 @@ most_recent_season <- function() {
   today <- Sys.Date()
   as.integer(format(today, "%Y")) + (as.integer(format(today, "%m")) >= 10L)
 }
+
+
+#' Clear the session cache
+#'
+#' @return Invisibly `TRUE`.
+#' @export
+clear_cache <- function() {
+  memoise::forget(read_one)
+  invisible(TRUE)
+}
+
+
