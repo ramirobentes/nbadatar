@@ -1,0 +1,95 @@
+table,column,type,description,seasons
+pbp,season,integer,"Season, labelled by the year it ends (2025 = 2024-25).",all
+pbp,season_type,character,"Either ""regular"" or ""playoffs"".",all
+pbp,game_date,Date,Date the game was played.,all
+pbp,game_id,character,NBA game identifier.,all
+pbp,team_home,character,Home team abbreviation.,all
+pbp,team_away,character,Away team abbreviation.,all
+pbp,event_num,numeric,Event identifier assigned by the NBA feed; not consecutive.,all
+pbp,number_event,numeric,"Sequential event number within the game, starting at 1.",all
+pbp,msg_type,numeric,"Event type code (1 = made shot, 2 = missed shot, 3 = free throw, 4 = rebound, 5 = turnover, 6 = foul, 7 = violation, 8 = substitution, 9 = timeout, 10 = jump ball, 11 = ejection, 12 = period start, 13 = period end, 18 = replay, 20 = stoppage).",all
+pbp,act_type,numeric,"Sub-type code giving the specific action within msg_type, e.g. the shot type or foul type (see act_type_codes for the meaning of each code).",all
+pbp,period,numeric,Period number; 5 and above are overtimes.,all
+pbp,clock,character,Game clock remaining in the period.,all
+pbp,secs_game,numeric,Seconds elapsed since the start of the game.,all
+pbp,team_abb,character,Team the event is attributed to.,all
+pbp,description,character,Text description of the event from the NBA feed.,all
+pbp,reb_type,character,"Rebound type (def = defensive, off = offensive)",all
+pbp,shot_pts,numeric,Points scored on this event.,all
+pbp,hs,numeric,Home team score after the event.,all
+pbp,vs,numeric,Away (visitor) team score after the event.,all
+pbp,person1type,numeric,"Code for the role of the primary person in the event (2 = team home, 3 = team away, 4 = player home, 5 = player away, 6 = coach home, 7 = coach away)",all
+pbp,player1_name,character,"Primary player involved (shooter, fouler, rebounder).",all
+pbp,player2_name,character,"Secondary player (assist, player substituted in).",all
+pbp,player3_name,character,"Third player (block, steal, player fouled).",all
+pbp,lineup_home,character,"Five home players on the floor, as a single string.",all
+pbp,lineup_away,character,"Five away players on the floor, as a single string.",all
+pbp,possession,numeric,A value of 1 means a possession is counted on this event; sum this column to count possessions.,all
+pbp,and1,numeric,"A value of 1 means the made field goal, foul and free throw are part of an And-1 sequence.",all
+pbp,start_poss,character,Game clock when the current possession began.,all
+pbp,total_fta,numeric,Number of free throws awarded in this trip to the line.,all
+pbp,team_ft,character,Team shooting the free throws.,all
+pbp,player_ft,character,Player shooting the free throws.,all
+pbp,type_foul,numeric,Code for the type of foul that caused this free throw; NA on all other events.,all
+pbp,shot_pts_home,numeric,"Points credited to the home team at the event that earned them, so free throws are attributed to the foul rather than to each attempt. Use for on-off and plus-minus calculations, where a substitution between free throws would otherwise misattribute the points.",all
+pbp,shot_pts_away,numeric,"Same as shot_pts_home, for the away team.",all
+pbp,poss_home,numeric,"Equals 1 when a home possession is credited at this event, attributed to the event that earned it rather than to the final free throw. Use for on-off and lineup possession counts, where a substitution between free throws would otherwise misattribute the possession.",all
+pbp,poss_away,numeric,"Same as poss_home, for the away team.",all
+pbp,secs_played,numeric,Seconds elapsed since the previous event.,all
+pbp,total_starters_home,numeric,Number of home starters on the floor.,all
+pbp,total_starters_away,numeric,Number of away starters on the floor.,all
+pbp,margin_before,numeric,Score margin immediately before the event (home minus away).,all
+pbp,garbage_time,numeric,Whether the event occurred in garbage time (Cleaning the Glass definition).,all
+pbp,off_team_abb,character,Team on offense (from the source).,all
+pbp,opt1,numeric,Source-specific event detail field.,all
+pbp,opt2,numeric,Source-specific event detail field.,all
+pbp,locX,numeric,"Shot location, horizontal coordinate.",all
+pbp,locY,numeric,"Shot location, vertical coordinate.",all
+pbp,order,numeric,Sort key from the source; NA for the 2016-17 regular season and some individual games.,all
+pbp,action_type,character,"Event type as text in the CDN feed, replacing the numeric msg_type.",all
+pbp,sub_type,character,Action sub-type as text in the CDN feed.,all
+pbp,qualifiers,character,"Additional event tags from the CDN feed, e.g. fastbreak or second chance.",all
+pbp,descriptor,character,Further event detail from the CDN feed.,all
+pbp,shot_result,character,Whether the shot was made or missed.,all
+pbp,shot_action_number,numeric,Event number for the shot that caused the rebound.,all
+pbp,official_id,numeric,Identifier of the official who called the foul.,all
+pbp,foul_drawn_person_id,numeric,Identifier of the player who drew the foul.,all
+pbp,time_actual,POSIXct,Real-world timestamp of the event.,all
+pbp,is_field_goal,numeric,Whether the event was a field goal attempt.,all
+pbp,side,character,Side of the floor the shot was taken from.,all
+pbp,area,character,Broad court area of the shot.,all
+pbp,area_detail,character,More specific court area of the shot.,all
+pbp,shot_distance,numeric,Shot distance in feet.,all
+possessions,season,integer,"Season, labelled by the year it ends (2025 = 2024-25).",all
+possessions,season_type,character,"Either ""regular"" or ""playoffs"".",all
+possessions,game_id,character,NBA game identifier.,all
+possessions,period,numeric,Period number; 5 and above are overtimes.,all
+possessions,start_time,hms,Game clock when the possession began.,all
+possessions,end_time,hms,Game clock when the possession ended.,all
+possessions,score_team_start,numeric,Possessing team's score at the start of the possession.,all
+possessions,score_opp_start,numeric,Opponent's score at the start of the possession.,all
+possessions,team_poss,character,Team with the ball.,all
+possessions,opp,character,Opposing team.,all
+possessions,poss_num_team,numeric,Possession number for that team within the period.,all
+possessions,pts_poss,numeric,pts_poss,all
+possessions,type_end,character,"How the possession ended (made shot, turnover, defensive rebound, etc.).",all
+possessions,events_seq,character,Sequence of events making up the possession. [verify],all
+possessions,lineup_team,character,Five players on the floor for the possessing team.,all
+possessions,lineup_opp,character,Five players on the floor for the opponent.,all
+lineup_stats,season,integer,"Season, labelled by the year it ends (2025 = 2024-25).",all
+lineup_stats,season_type,character,"Either ""regular"" or ""playoffs"".",all
+lineup_stats,game_id,character,NBA game identifier.,all
+lineup_stats,location_team,character,Whether team was home or away.,all
+lineup_stats,period,numeric,Period number; 5 and above are overtimes.,all
+lineup_stats,stint,numeric,Stint number within the period.,all
+lineup_stats,team,character,Team the row is from the perspective of.,all
+lineup_stats,opp,character,Opposing team.,all
+lineup_stats,lineup_team,character,Five players on the floor during the stint for team.,all
+lineup_stats,lineup_opp,character,Five players on the floor during the stint for opp.,all
+lineup_stats,secs_game_start,numeric,Seconds into the game when the stint began.,all
+lineup_stats,secs_game_end,numeric,Seconds into the game when the stint ended.,all
+lineup_stats,secs_played,numeric,Length of the stint in seconds.,all
+lineup_stats,poss_team,numeric,Possessions used by team during the stint.,all
+lineup_stats,pts_team,numeric,Points scored by team during the stint.,all
+lineup_stats,poss_opp,numeric,Possessions used by opp.,all
+lineup_stats,pts_opp,numeric,Points scored by opp.,all

@@ -82,3 +82,21 @@ clear_cache <- function() {
 }
 
 
+
+
+#' Look up column descriptions
+#'
+#' @param table Optionally filter to one table.
+#' @param column Optionally filter to columns matching this text.
+#'
+#' @return A tibble of dictionary entries.
+#' @export
+#'
+#' @examples
+#' dictionary_lookup("pbp", "shot")
+dictionary_lookup <- function(table = NULL, column = NULL) {
+  d <- nbadatar::dictionary
+  if (!is.null(table))  d <- d[d$table == table, ]
+  if (!is.null(column)) d <- d[grepl(column, d$column, ignore.case = TRUE), ]
+  d
+}

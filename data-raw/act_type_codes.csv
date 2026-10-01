@@ -1,0 +1,183 @@
+msg_type,act_type,description
+1 or 2,0,Shot
+1 or 2,1,Jump shot
+1 or 2,2,Running jump shot
+1 or 2,3,Hook shot
+1 or 2,5,Layup
+1 or 2,6,Driving layup
+1 or 2,7,Dunk
+1 or 2,8,Slam dunk
+1 or 2,9,Driving dunk
+1 or 2,40,Layup
+1 or 2,41,Running layup
+1 or 2,42,Driving layup
+1 or 2,43,Alley-oop layup
+1 or 2,44,Reverse layup
+1 or 2,45,Jump shot
+1 or 2,46,Running jump shot
+1 or 2,47,Turnaround jump shot
+1 or 2,48,Dunk
+1 or 2,49,Driving dunk
+1 or 2,50,Running dunk
+1 or 2,51,Reverse dunk
+1 or 2,52,Alley-oop dunk
+1 or 2,53,Tip shot
+1 or 2,54,Running tip shot
+1 or 2,55,Hook shot
+1 or 2,56,Running hook shot
+1 or 2,57,Driving hook shot
+1 or 2,58,Turnaround hook shot
+1 or 2,63,Fadeaway jumper
+1 or 2,65,Jump hook shot
+1 or 2,66,Jump bank shot
+1 or 2,67,Hook bank shot
+1 or 2,71,Finger roll layup
+1 or 2,72,Putback layup
+1 or 2,73,Driving reverse layup
+1 or 2,74,Running reverse layup
+1 or 2,75,Driving finger roll layup
+1 or 2,76,Running finger roll layup
+1 or 2,77,Driving jump shot
+1 or 2,78,Floating jump shot
+1 or 2,79,Pull-up jump shot
+1 or 2,80,Step-back jump shot
+1 or 2,81,Pullup bank shot
+1 or 2,82,Driving bank shot
+1 or 2,83,Fadeaway bank shot
+1 or 2,84,Running bank shot
+1 or 2,85,Turnaround bank shot
+1 or 2,86,Turnaround fadeaway
+1 or 2,87,Putback dunk
+1 or 2,88,Driving slam dunk
+1 or 2,89,Reverse slam dunk
+1 or 2,90,Running slam dunk
+1 or 2,91,Putback reverse dunk
+1 or 2,92,Putback slam dunk
+1 or 2,93,Driving bank hook shot
+1 or 2,94,Jump bank hook shot
+1 or 2,95,Running bank hook shot
+1 or 2,96,Turnaround bank hook shot
+1 or 2,97,Tip layup
+1 or 2,98,Cutting layup
+1 or 2,99,Cutting finger roll layup
+1 or 2,100,Running alley oop layup
+1 or 2,101,Driving floating jump shot
+1 or 2,102,Driving floating bank jump shot
+1 or 2,103,Running pullup jump shot
+1 or 2,104,Step-back bank jump shot
+1 or 2,105,Turnaround fadeaway bank jump shot
+1 or 2,106,Running alley oop dunk shot
+1 or 2,107,Tip dunk
+1 or 2,108,Cutting dunk
+1 or 2,109,Driving reverse dunk
+1 or 2,110,Running reverse dunk
+3,10,FT 1 of 1
+3,11,FT 1 of 2
+3,12,FT 2 of 2
+3,13,FT 1 of 3
+3,14,FT 2 of 3
+3,15,FT 3 of 3
+3,16,FT technical
+3,18,FT flagrant 1 of 2
+3,19,FT flagrant 2 of 2
+3,20,FT flagrant 1 of 1
+3,21,FT technical 1 of 2
+3,22,FT technical 2 of 2
+3,25,FT clear path 1 of 2
+3,26,FT clear path 2 of 2
+3,27,FT flagrant 1 of 3
+3,28,FT flagrant 2 of 3
+3,29,FT flagrant 3 of 3
+3,81,FT transition take 1 of 1
+4,0,Rebounds that count
+4,1,Rebounds that don't count (after missed FT when there's another FT after)
+5,0,No turnover
+5,1,Bad pass
+5,2,Lost ball
+5,3,Out of bounds
+5,4,Traveling
+5,5,Foul turnover
+5,6,Double dribble
+5,7,Discontinued dribble
+5,8,3-second violation
+5,9,5-second violation
+5,10,8-second violation
+5,11,Shot clock
+5,12,Inbound
+5,13,Backcourt
+5,15,Offensive goaltending
+5,17,Lane violation
+5,18,Jump ball violation
+5,19,Kicked ball
+5,20,Illegal assist
+5,21,Palming
+5,23,Double personal
+5,24,10-second violation
+5,32,Opposite basket
+5,33,Punched ball
+5,34,Swinging elbows
+5,35,Basket from below
+5,36,Illegal screen
+5,37,Offensive foul
+5,38,5-second inbound
+5,39,Step out of bounds
+5,40,Out of bounds lost ball
+5,41,Poss lost ball
+5,42,Excess timeout
+5,43,Player out of bounds
+5,44,Too many players
+5,45,Out of bounds bad pass
+6,1,Personal
+6,2,Shooting
+6,3,Loose ball
+6,4,Offensive
+6,5,Inbound
+6,6,Away from play
+6,8,Punching
+6,9,Clear path
+6,10,Double personal
+6,11,Technical
+6,12,Unsportsmanlike technical
+6,13,Hanging technical
+6,14,Flagrant 1
+6,15,Flagrant 2
+6,16,Double technical
+6,17,Defensive 3 seconds
+6,18,Delay technical
+6,19,Taunting technical
+6,25,Excess timeout technical
+6,26,Offensive charge
+6,27,Personal block
+6,28,Personal take
+6,29,Shooting block
+6,30,Too many players technical
+6,31,Transition take
+6,32,Flopping technical
+6,33,Bench technical
+7,1,Delay of game
+7,2,Defensive goaltending
+7,3,Lane
+7,4,Jump ball
+7,5,Kicked ball
+7,6,Double lane
+9,0,No timeout
+9,1,Regular
+9,2,Short
+9,4,Official
+9,7,Challenge
+10,0,Jump Ball
+10,1,Challenge jump ball
+18,0,Support ruling
+18,1,Overturn ruling
+18,2,Altercation ruling
+18,3,Request stands
+18,4,Challenge - support rulling
+18,5,Challenge - overturn rulling
+18,6,Challenge - ruling stands
+18,7,Replay center
+20,1,Blood rule
+20,2,Injury
+20,3,Out of bounds
+20,4,Court cleanup
+20,5,Equipment malfunction
+20,6,Other
