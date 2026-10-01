@@ -90,3 +90,9 @@ same arguments.
 - [`dictionary_lookup()`](https://ramirobentes.github.io/nbadatar/reference/dictionary_lookup.md)
   : Look up column descriptions
 
+# Articles
+
+### All vignettes
+
+- [Data
+  dictionary](https://ramirobentes.github.io/nbadatar/articles/data-dictionary.md):

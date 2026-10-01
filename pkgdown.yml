@@ -1,8 +1,9 @@
 pandoc: 3.8.3
 pkgdown: 2.2.1
 pkgdown_sha: ~
-articles: {}
-last_built: 2026-10-01T19:32Z
+articles:
+  data-dictionary: data-dictionary.html
+last_built: 2026-10-01T20:25Z
 urls:
   reference: https://ramirobentes.github.io/nbadatar/reference
   article: https://ramirobentes.github.io/nbadatar/articles
