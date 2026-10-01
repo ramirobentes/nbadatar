@@ -16,6 +16,10 @@ Imports:
     memoise,
     vctrs
 Suggests: 
+    htmltools,
+    knitr,
+    reactable,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Config/roxygen2/version: 8.1.0
@@ -23,3 +27,4 @@ URL: https://ramirobentes.github.io/nbadatar/
 Depends: 
     R (>= 3.5)
 LazyData: true
+VignetteBuilder: knitr
