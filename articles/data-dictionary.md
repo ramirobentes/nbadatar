@@ -9,10 +9,4 @@ sort.
 ## Action type codes
 
 The `msg_type` and `act_type` columns in the play-by-play data are
-numeric codes. Join this table to get their meanings:
-
-``` r
-
-load_pbp(2025) |>
-  dplyr::left_join(act_type_codes, by = c("msg_type", "act_type"))
-```
+numeric codes.
